@@ -51,16 +51,17 @@ header p {
     text-align: center;
 }
 
-
+/* 호버 효과 */
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
+/* ⭐ 이미지 높이 고정! 정렬 깨지는 문제 해결 */
 .card img {
     width: 100%;
-    height: 300px;          
-    object-fit: contain;    
+    height: 300px;           /* ← 높이 고정 */
+    object-fit: contain;     /* 잘리지 않게 비율 유지 */
     background: #fafafa;
     display: block;
     border-bottom: 1px solid #eee;
