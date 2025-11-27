@@ -1,0 +1,73 @@
+/* 전체 기본 스타일 */
+body {
+    margin: 0;
+    font-family: "Pretendard", sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* 헤더 영역 */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* 프로젝트 갤러리 */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 카드 스타일 */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* 호버 효과 */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* 이미지 */
+.card img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+/* 링크 텍스트 */
+.card a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.card a:hover {
+    color: #6e8efb;
+}
