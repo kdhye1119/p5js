@@ -24,10 +24,10 @@ header p {
     opacity: 0.95;
 }
 
-/* 프로젝트 갤러리 — 두 개씩 배치 */
+/* 프로젝트 갤러리 — 무조건 2개씩 배치 */
 #projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2개씩 */
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 40px;
     max-width: 900px;
@@ -51,24 +51,22 @@ header p {
     text-align: center;
 }
 
+
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* 이미지 — 최대 크기 400×600 적용 */
 .card img {
     width: 100%;
-    max-width: 600px;   /* 최대 너비 */
-    max-height: 400px;  /* 최대 높이 */
-    object-fit: contain;
-    display: block;
-    margin: auto;
+    height: 300px;          
+    object-fit: contain;    
     background: #fafafa;
+    display: block;
     border-bottom: 1px solid #eee;
 }
 
-/* 링크 텍스트 */
+/* 텍스트 링크 */
 .card a {
     display: block;
     padding: 20px;
