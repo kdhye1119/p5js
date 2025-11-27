@@ -6,11 +6,11 @@ body {
     color: #333;
 }
 
-/* 헤더 영역 */
+/* 헤더 영역 — 하늘색 계열로 변경 */
 header {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #7ecbff, #9cd9ff); /* 하늘색 그라데이션 */
     color: white;
 }
 
@@ -21,13 +21,13 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 /* 프로젝트 갤러리 */
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding: 40px;
     max-width: 1200px;
@@ -50,10 +50,15 @@ header p {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* 이미지 */
+/* 이미지 - 최대 크기 400×600 적용 */
 .card img {
     width: 100%;
+    max-width: 600px;   /* 최대 너비 */
+    max-height: 400px;  /* 최대 높이 */
+    object-fit: contain; /* 비율 유지하면서 맞추기 */
     display: block;
+    margin: auto;
+    background: #fafafa;
     border-bottom: 1px solid #eee;
 }
 
@@ -69,5 +74,5 @@ header p {
 }
 
 .card a:hover {
-    color: #6e8efb;
+    color: #4db3ff; /* 하늘색 느낌 */
 }
